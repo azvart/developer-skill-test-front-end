@@ -1,0 +1,39 @@
+.section {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    header {
+        height: 100px;
+        background-color: black;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row;
+        nav {
+            padding: 0em 1.5em;
+            display: flex;
+            flex-basis: 400px;
+            flex-direction: row;
+            justify-content: space-evenly;
+            a {
+                text-decoration: none;
+                color: #fff;
+                transition: all 0.3s;
+                &:hover {
+                    color: lightcoral;
+                }
+            }
+        }
+    }
+    main {
+        flex-grow: 1;
+        padding: 1em 2em 3em;
+        display: flex;
+        flex-direction: column;
+        section {
+            transition: all 0.5s ease-in-out;
+            background-color: #e0e0e0;
+            flex-grow: 1;
+        }
+    }
+}
